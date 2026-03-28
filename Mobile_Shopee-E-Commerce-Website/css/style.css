@@ -1,0 +1,606 @@
+/* FAQ Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+.herosection .content h4 {
+    text-align: center;
+    font-size: 32px;
+    margin-top: 50px;
+    color: #333;
+}
+
+.faq-container {
+    width: 100%;
+    padding-top: 180px;
+    padding-bottom: 50px;
+    background: #f0f3fe;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.faq-container h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.faq-item {
+    margin-bottom: 25px;
+}
+
+.faq-item h3 {
+    cursor: pointer;
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.faq-item p {
+    margin: 10px 0 0 10px;
+}
+
+.herosection-blog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background: #00a5c4;
+}
+
+.herosection-blog h4 {
+    font-size: 75px;
+    color: white;
+}
+
+.faq-question {
+    width: 100%;
+    text-align: left;
+    background-color: #e1bebe;
+    border: none;
+    padding: 10px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px;
+    background-color: #f9f9f9;
+    margin-bottom: 15px;
+    border-left: 3px solid #bd619c;
+    border-radius: 0 5px 5px 0;
+}
+
+.faq-question svg {
+    width: 12px;
+    height: 15px;
+}
+
+.faqherosection .contianer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    grid-gap: 40px;
+}
+
+.faqherosection .contianer .leftcontent h2 {
+    font-family: sans-serif;
+    font-size: 40px;
+    color: white;
+}
+
+.faqherosection .contianer .leftcontent p {
+    font-size: 16px;
+    font-family: sans-serif;
+    color: white;
+}
+
+.faqherosection .contianer > div {
+    width: 100%;
+}
+
+.faqherosection .contianer img {
+    width: 100%;
+    height: 100%;
+    max-height: 550px;
+    object-fit: cover;
+    border-radius: 100px;
+    object-position: 0px -2px;
+    position: relative;
+    top: 115px;
+}
+
+.faqherosection {
+    background: #a3a3b3;
+}
+
+.faq-container > div {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+}
+
+.faq-item:has(.faq-answer[style="display: block;"]) svg {
+    transform: rotate(180deg);
+}
+
+.bolgherosection .container {
+    padding-top: 50px;
+}
+
+.bolgherosection .uppersection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bolgherosection .uppersection .left h2 {
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    color: white;
+}
+
+.bolgherosection .uppersection .left p {
+    font-size: 1.125rem;
+    margin: 20px 0 0;
+    font-weight: 400;
+    line-height: 1.6;
+    color: white;
+}
+
+.bolgherosection .bottomsection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 20px;
+}
+
+.bolgherosection .bottomsection .box {
+    padding: 30px;
+    max-width: 360px;
+    width: 100%;
+    background: white;
+    box-shadow: 14px 11px 10px pink;
+}
+
+.bolgherosection .bottomsection .box h4 {
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 1.25rem;
+    font-family: Ubuntu, sans-serif;
+}
+
+.bolgherosection .bottomsection .box p {
+    font-weight: 400;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.bolgherosection {
+    background-size: cover;
+    padding-bottom: 50px;
+}
+
+.bolgherosection .uppersection img {
+    max-width: 450px;
+}
+
+.reliablesystem .container {
+    width: 100%;
+    max-width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+}
+
+.reliablesystem .container h4 {
+    font-size: 2.5rem;
+    line-height: 1.1;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+.reliablesystem .container > p {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.reliablesystem .container .layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 20px;
+}
+
+.reliablesystem .container .layout .box {
+    padding: 30px;
+    background: #fb6f78;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 270px;
+}
+
+.reliablesystem .container .layout .box .circle {
+    width: 196px;
+    min-height: 196px;
+    height: auto;
+    margin: 8px auto 0;
+    border: 5px solid white;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reliablesystem .container .layout .box .circle h3 {
+    color: white;
+    font-weight: 700;
+}
+
+.reliablesystem .container .layout .box h6 {
+    text-align: center;
+    margin-top: 25px !important;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    width: 100%;
+    max-width: 205px;
+    margin: auto;
+}
+
+.privacypolicyhero .image img {
+    width: 100%;
+    height: 402px;
+    object-fit: cover;
+}
+
+.privacypolicyhero .privacypolicy {
+    background: #6b52df;
+    padding-bottom: 50px;
+}
+
+.privacypolicyhero .privacypolicy .newcontainer {
+    width: 100%;
+    max-width: 1140px;
+    margin: auto;
+    background: white;
+    padding: 60px 60px 30px;
+    border-radius: 50px;
+    position: relative;
+    bottom: 60px;
+}
+
+.privacypolicyhero .privacypolicy .newcontainer h2 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.privacypolicyhero .privacypolicy .newcontainer h3 {
+    margin: 40px auto 0 0;
+    color: #6b52df !important;
+    font-size: 2.25rem;
+}
+
+.privacypolicyhero .privacypolicy .newcontainer > p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.privacypolicyhero .privacypolicy .box h4 {
+    color: #6b52df !important;
+    font-size: 2.25rem;
+}
+
+.privacypolicyhero .privacypolicy .box p {
+    font-weight: 700;
+}
+
+.privacypolicyhero .privacypolicy .box .list li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.privacypolicyhero .privacypolicy .box {
+    margin-bottom: 50px;
+}
+
+.privacypolicyhero .privacypolicy .newcontainer > p:last-of-type {
+    border-bottom: 2px solid #c0b5f2;
+    padding-bottom: 20px;
+    margin-bottom: 75px;
+}
+
+.reliablesystem + .container .card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.reliablesystem + .container .card-date {
+    margin-bottom: 10px;
+    text-align: right;
+    position: relative;
+}
+
+.reliablesystem + .container .card-date:before {
+    content: 'Date';
+    font-size: 16px;
+    font-weight: 700;
+    position: absolute;
+    left: 0px;
+}
+
+.reliablesystem + .container .card-body {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+#product #order-details + div > div:last-of-type {
+    margin-top: 15px;
+}
+
+/* privacy policy css */
+
+@media only screen and (max-width:767px) {
+    .privacypolicyhero .image img {
+    width: 100%;
+    height: fit-content;
+    }
+
+    .privacypolicyhero .privacypolicy .newcontainer {
+    bottom: 40px;
+    padding: 50px 30px 5px 30px;
+    }
+
+    .privacypolicyhero .privacypolicy .newcontainer h2 {
+    font-size: 40px;
+    }
+
+    .privacypolicyhero .privacypolicy .newcontainer h3 {
+    margin: 25px auto 0 0;
+    }
+
+    .privacypolicyhero .privacypolicy .box h4 {
+    font-size: 30px;
+    }
+
+    .privacypolicyhero .privacypolicy {
+    padding-bottom: 10px;
+    }
+
+}
+
+/* privacy policy css end */
+
+/* FAQs Section css */
+
+@media only screen and (max-width:767px) {
+    .faqherosection .contianer {
+    grid-gap: 0px;
+    padding-top: 90px;
+    padding-left: 40px;
+    padding-right: 20px;
+    flex-direction: column;
+}
+
+
+.faqherosection .contianer img {
+    top: 75px;
+    z-index: 9;
+}
+
+.faq-container {
+    padding-top: 185px;
+    position: relative;
+    bottom: 40px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+}
+/* FAQs Section css end */
+ 
+/* blog section css */
+
+@media only screen and (max-width:767px) {
+    .bolgherosection .uppersection {
+    flex-direction: column;
+    }
+
+    .bolgherosection .uppersection .left h2 {
+    font-size: 2.5rem;
+    }
+
+    .bolgherosection .bottomsection {
+    flex-direction: column;
+     position: relative;
+    bottom: 350px;
+    }
+
+    .bolgherosection .bottomsection .box {
+     position: relative;
+    background: transparent;
+    display: flex;
+     flex-direction: column;
+    }
+
+    .bolgherosection .bottomsection .box:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: white;
+    opacity: 0.5;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    }
+
+    .bolgherosection .bottomsection .box h4,
+    .bolgherosection .bottomsection .box p{
+        z-index: 9;
+    }
+
+    .bolgherosection {
+    height: 1150px;
+    }
+
+    .reliablesystem .container {
+    padding-top: 0px;
+}
+
+.reliablesystem {
+    margin-top: -80px;
+}
+
+.reliablesystem .container h4 {
+    font-size: 2rem;
+}
+
+.reliablesystem .container .layout {
+    flex-wrap: wrap;
+    grid-gap:15px;
+}
+
+.reliablesystem .container .layout .box .circle {
+    width: 100px;
+    min-height: 100px;
+}
+
+.reliablesystem .container .layout .box {
+    padding: 15px;
+    max-width: 46%;
+}
+
+.reliablesystem .container .layout .box h6 {
+    font-size: 16px;
+}
+
+.reliablesystem .container .layout .box .circle h3 {
+    font-size: 24px;
+}
+
+.bolgherosection .uppersection img {
+    max-width: 360px;
+}
+
+
+}
+
+/* blog section css end */
+
+/* Homepage css */
+
+@media only screen and (max-width:767px){
+    #banner-area ~ #special-price .grid > div {
+    position: unset !important;
+    margin: 0px !important;
+}
+
+#banner-area ~ #special-price .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    height: unset !important;
+}
+
+#banner-area ~ #special-price .grid .item {
+    width: unset !important;
+     padding-bottom: 20px !important;
+}
+
+#banner-area ~ #top-sale [aria-label="Next"] {
+    margin-right: 0px;
+}
+
+#banner-area ~ #top-sale [aria-label="Previous"] {
+    margin-left: 0px !important;
+}
+
+
+}
+/* Homepage css end*/
+
+/* cart page css */
+
+#cart .container-fluid {
+    width: 100% !important;
+}
+
+.navbar-toggler.active + #navbarNav {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #00000075;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 99;
+}
+
+.navbar-toggler.active + #navbarNav .navbar-nav {
+    margin: 0px !important;
+    width: 75%;
+    height: 100%;
+    background: #00a5c4;
+}
+
+#header .navbar {
+    position: unset !important;
+}
+
+.navbar-toggler.active + #navbarNav .navbar-nav li {
+    padding-left: 20px;
+}
+
+.navbar-toggler.active + #navbarNav .navbar-nav > li:first-of-type {
+    padding-top: 15px;
+}
+
+#header .strip form > .rounded-pill .rounded-pill {
+    padding: 0px !important;
+    width: 25px !important;
+    display: flex;
+    flex-direction: row;
+    height: 25px !important;
+    justify-content: center;
+    align-items: center;
+}
+
+#header .strip form > .rounded-pill {
+    display: flex;
+     padding: 4px 0px !important;
+}
+
+#header .strip {
+    padding: 5px 15px !important;
+    justify-content: flex-end !important;
+}
+
+#header .strip > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+}
+
+
+/* cart page css end */
