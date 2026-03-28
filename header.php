@@ -17,6 +17,7 @@
 
     <!-- Custom CSS file -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <?php
     // require functions.php file
@@ -29,7 +30,7 @@
 <!-- start #header -->
 <header id="header">
     <div class="strip d-flex justify-content-between px-4 py-1 bg-light">
-        <p class="font-rale font-size-12 text-black-50 m-0">Jordan Calderon 430-985 Eleifend St. Duluth Washington 92611 (427) 930-5255</p>
+        <p class="font-rale font-size-12 text-black-50 m-0"></p>
         <div class="font-rale font-size-14">
             <a href="#" class="px-3 border-right border-left text-dark">Login</a>
             <a href="#" class="px-3 border-right text-dark">Whishlist (0)</a>
@@ -38,7 +39,7 @@
 
     <!-- Primary Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark color-second-bg">
-        <a class="navbar-brand" href="#">Mobile Shopee</a>
+        <a class="navbar-brand" href="http://localhost/Mobile_Shopee-E-Commerce-Website/">Mobile Shopee</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -48,19 +49,16 @@
                     <a class="nav-link" href="#">On Sale</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Category</a>
+                    <a class="nav-link" href="products.php">Products <i class="fas fa-chevron-down"></i></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Products <i class="fas fa-chevron-down"></i></a>
+                    <a class="nav-link" href="blog.php">Blog</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Blog</a>
+                    <a class="nav-link" href="faq.php">FAQs <i class="fas fa-chevron-down"></i></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Category <i class="fas fa-chevron-down"></i></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Coming Soon</a>
+                    <a class="nav-link" href="privacy.php">Privacy Policy</a>
                 </li>
             </ul>
             <form action="#" class="font-size-14 font-rale">
@@ -72,6 +70,45 @@
         </div>
     </nav>
     <!-- !Primary Navigation -->
+
+  <script>
+
+document.addEventListener('DOMContentLoaded', function() {
+    const toggler = document.querySelector('.navbar-toggler');
+    const navbarNav = document.querySelector('#navbarNav .navbar-nav');
+
+    if (!toggler || !navbarNav) return;
+
+    // Toggle active class when toggler is clicked
+    toggler.addEventListener('click', function(e) {
+        this.classList.toggle('active');
+    });
+
+    // Remove active class when clicking inside the menu
+    // navbarNav.addEventListener('click', function() {
+    //     if (toggler.classList.contains('active')) {
+    //         toggler.classList.remove('active');
+    //     }
+    // });
+
+    // Remove active class when clicking outside toggler and menu
+    document.addEventListener('click', function(e) {
+        const target = e.target;
+        if (!toggler.contains(target) && !navbarNav.contains(target)) {
+            toggler.classList.remove('active');
+        }
+    });
+
+        const target = document.querySelector('#header .strip');
+    // Select the element you want to move
+    const form = document.querySelector('.navbar #navbarNav form');
+
+    if (target && form) {
+        target.appendChild(form); // moves the form inside #header .strip at the end
+    }
+
+});
+</script>
 
 </header>
 <!-- !start #header -->

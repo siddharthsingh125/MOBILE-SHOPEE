@@ -11,6 +11,25 @@ class Cart
         $this->db = $db;
     }
 
+    public function checkCartQuantity($table = "cart"){
+    $result = $this->db->con->query("SELECT COUNT(*) as total FROM {$table}");
+    
+    if($result){
+        $row = $result->fetch_assoc();
+        
+        if($row['total'] == 0){
+            echo '<script>
+            setTimeout(function() {
+                const cartMessage = document.querySelector("#cart .sub-total .text-success");
+                if(cartMessage) {
+                    cartMessage.textContent = "Your cart is empty";
+                }
+            }, 1000);
+            </script>';
+        }
+    }
+    }
+
     // insert into cart table
     public  function insertIntoCart($params = null, $table = "cart"){
         if ($this->db->con != null){
@@ -95,6 +114,5 @@ class Cart
             return $result;
         }
     }
-
 
 }

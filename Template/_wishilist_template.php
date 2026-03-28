@@ -25,9 +25,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
                         ?>
                         <!-- cart item -->
                         <div class="row border-top py-3 mt-3">
-                            <div class="col-sm-2">
+                            <a class="col-sm-2" href="product.php?item_id=<?php echo $item['item_id']; ?>">
                                 <img src="<?php echo $item['item_image'] ?? "./assets/products/1.png" ?>" style="height: 120px;" alt="cart1" class="img-fluid">
-                            </div>
+                            </a>
                             <div class="col-sm-8">
                                 <h5 class="font-baloo font-size-20"><?php echo $item['item_name'] ?? "Unknown"; ?></h5>
                                 <small>by <?php echo $item['item_brand'] ?? "Brand"; ?></small>

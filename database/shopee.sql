@@ -149,3 +149,20 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+
+CREATE TABLE blogs (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    content TEXT NOT NULL,
+    image VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+INSERT INTO blogs (title, content, image, created_at) VALUES
+('Best Smartphones Under $210.83 in 2026', 'Discover the top budget smartphones with powerful cameras, smooth displays, and long battery life that offer the best value for money.', 'assets/faq/blog1.webp', '2026-03-27'),
+('Must-Have Mobile Accessories for Everyday Use', 'From fast chargers to wireless earbuds and durable phone cases, explore the essential accessories every smartphone user should own.', 'assets/faq/blog2.avif', '2026-03-28'),
+('Android vs iPhone: Which One Should You Buy?', 'A complete comparison of Android and iPhone devices based on performance, camera quality, battery life, and price to help you decide.', 'assets/faq/blog3.png', '2026-03-29'),
+('Tips to Improve Your Phone Battery Life', 'Learn simple ways to increase battery backup, optimize settings, and keep your smartphone running longer throughout the day.', 'assets/faq/blog4.webp', '2026-03-30'),
+('Fast Charging vs Normal Charging', 'Understand the difference between fast charging and regular charging, and learn which option is better for your smartphone battery health.', 'assets/faq/blog5.jpg', '2026-03-30'),
+('Best Camera Phones for Photography', 'Explore smartphones with the best camera quality, night mode, portrait shots, and video recording features for amazing photos.', 'assets/faq/blog6.png', '2026-03-30');
