@@ -3,10 +3,13 @@
 shuffle($product_shuffle);
 
 // request method post
-if($_SERVER['REQUEST_METHOD'] == "POST"){
-    if (isset($_POST['new_phones_submit'])){
-        // call method addToCart
-        $Cart->addToCart($_POST['user_id'], $_POST['item_id']);
+if ($_SERVER['REQUEST_METHOD'] == "POST"){
+    if (isset($_POST['top_sale_submit'])){
+        $Cart->addToCart(
+            $_POST['user_id'],
+            $_POST['item_id'],
+            $_POST['qty'] ?? 1
+        );
     }
 }
 ?>

@@ -90,8 +90,10 @@ $(document).ready(function(){
 
                 if($input.val() >= 1 && $input.val() <= 9){
                     $input.val(function(i, oldval){
-                        return ++oldval;
-                    });
+    let newQty = ++oldval;
+    $("#hidden_qty").val(newQty); // product page hidden qty update
+    return newQty;
+});
 
                     // increase price of the product
                     $price.text(parseInt(item_price * $input.val()).toFixed(2));
@@ -117,8 +119,10 @@ $(document).ready(function(){
 
                 if($input.val() > 1 && $input.val() <= 10){
                     $input.val(function(i, oldval){
-                        return --oldval;
-                    });
+    let newQty = --oldval;
+    $("#hidden_qty").val(newQty); // product page hidden qty update
+    return newQty;
+});
 
 
                     // increase price of the product

@@ -9,7 +9,11 @@
 if($_SERVER['REQUEST_METHOD'] == "POST"){
     if (isset($_POST['special_price_submit'])){
         // call method addToCart
-        $Cart->addToCart($_POST['user_id'], $_POST['item_id']);
+        $Cart->addToCart(
+    $_POST['user_id'],
+    $_POST['item_id'],
+    $_POST['qty'] ?? 1
+);
     }
 }
 
