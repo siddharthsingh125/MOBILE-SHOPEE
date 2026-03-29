@@ -20,7 +20,7 @@ include('header.php');
 
     <div class="faq-item">
         <button class="faq-question">1. How can I check if a product is available?</button>
-        <div class="faq-answer">
+        <div class="faq-answer" style="display: block;">
             <p>You can check product availability directly on the <strong>Mobile Shopee product page</strong>. If the item is in stock, you will see the <strong>“Add to Cart”</strong> or <strong>“Buy Now”</strong> option. Out-of-stock products may show an estimated restock date.</p>
         </div>
     </div>

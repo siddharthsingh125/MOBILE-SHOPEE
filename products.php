@@ -12,6 +12,21 @@ if ($conn->connect_error) die("Connection failed: " . $conn->connect_error);
 ?>
 
 <div class="container my-5">
+    <h1 class="pdpheading">Mobiles</h1>
+    <div class="pdphero">
+    <div class="container_new">
+        <div class="box"><img src="assets/faq/hero1.avif" alt="Image 1"></div>
+        <div class="box"><img src="assets/faq/hero2.avif" alt="Image 1"></div>
+        <div class="box"><img src="assets/faq/hero3.avif" alt="Image 1"></div>
+        <div class="box"><img src="assets/faq/hero5.avif" alt="Image 1"></div>
+        <div class="box"><img src="assets/faq/hero6.avif" alt="Image 1"></div>
+        <div class="box"><img src="assets/faq/hero7.avif" alt="Image 1"></div>
+    </div>
+</div>
+<div class="pdpcontent">
+<h2><strong>Buy Top Mobile Phones at Prices You’ll Love</strong></h2>
+<p><span style="">Need to upgrade your </span><strong>mobile phone</strong><span style="">? You’re in the right place. When visiting Reliance Digital, the experience of exploring mobiles is easy, thrilling, and hassle-free. Whether it is the most basic </span><strong>mobile phone</strong><span style=""> or a smartphone with all the features you need, we have choices that are reasonable across all budgets and lifestyles. Find the </span><strong>latest mobile phones </strong><span style="">of the leading brands, easily compare features and get great offers at the same time. When you </span><strong>buy a mobile phone with us online</strong><span style="">, you purchase real products, easy payment options and fast delivery, so your next upgrade is only a few clicks away.</span></p>
+</div>
     <h1 class="text-center mb-4">All Products</h1>
     <div class="row">
         <?php

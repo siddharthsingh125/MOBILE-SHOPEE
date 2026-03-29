@@ -33,7 +33,9 @@
         <p class="font-rale font-size-12 text-black-50 m-0"></p>
         <div class="font-rale font-size-14">
             <a href="#" class="px-3 border-right border-left text-dark">Login</a>
-            <a href="#" class="px-3 border-right text-dark">Whishlist (0)</a>
+            <a href="#" class="px-3 border-right text-dark">
+    Wishlist (<?php echo count($product->getData('wishlist')); ?>)
+</a>
         </div>
     </div>
 
@@ -49,7 +51,7 @@
                     <a class="nav-link" href="#">On Sale</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="products.php">Products <i class="fas fa-chevron-down"></i></a>
+                    <a class="nav-link" href="products.php">Product Page <i class="fas fa-chevron-down"></i></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="blog.php">Blog</a>
@@ -59,6 +61,9 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="privacy.php">Privacy Policy</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.php">About Us</a>
                 </li>
             </ul>
             <form action="#" class="font-size-14 font-rale">

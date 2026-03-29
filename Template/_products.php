@@ -167,6 +167,33 @@
     </div>
 </section>
 <!--   !product  -->
+
+</section>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    let qtyInput = document.querySelector(".qty_input");
+    let hiddenQty = document.getElementById("hidden_qty");
+
+    document.querySelector(".qty-up").addEventListener("click", function () {
+        let value = parseInt(qtyInput.value) || 1;
+        value++;
+        qtyInput.value = value;
+        hiddenQty.value = value;
+    });
+
+    document.querySelector(".qty-down").addEventListener("click", function () {
+        let value = parseInt(qtyInput.value) || 1;
+        if (value > 1) {
+            value--;
+            qtyInput.value = value;
+            hiddenQty.value = value;
+        }
+    });
+});
+</script>
+
+</body>
 <?php
         endif;
         endforeach;
