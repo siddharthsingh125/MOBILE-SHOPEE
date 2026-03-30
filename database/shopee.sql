@@ -166,3 +166,17 @@ INSERT INTO blogs (title, content, image, created_at) VALUES
 ('Tips to Improve Your Phone Battery Life', 'Learn simple ways to increase battery backup, optimize settings, and keep your smartphone running longer throughout the day.', 'assets/faq/blog4.webp', '2026-03-30'),
 ('Fast Charging vs Normal Charging', 'Understand the difference between fast charging and regular charging, and learn which option is better for your smartphone battery health.', 'assets/faq/blog5.jpg', '2026-03-30'),
 ('Best Camera Phones for Photography', 'Explore smartphones with the best camera quality, night mode, portrait shots, and video recording features for amazing photos.', 'assets/faq/blog6.png', '2026-03-30');
+
+CREATE TABLE IF NOT EXISTS users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100),
+    email VARCHAR(100),
+    password VARCHAR(50)
+);
+
+CREATE TABLE contact (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100),
+    email VARCHAR(100),
+    message TEXT
+);

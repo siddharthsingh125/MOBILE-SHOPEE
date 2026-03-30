@@ -65,6 +65,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="about.php">About Us</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.php">Contact Us</a>
+                </li>
             </ul>
             <form action="#" class="font-size-14 font-rale">
                 <a href="cart.php" class="py-2 rounded-pill color-primary-bg">
