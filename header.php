@@ -32,7 +32,7 @@
     <div class="strip d-flex justify-content-between px-4 py-1 bg-light">
         <p class="font-rale font-size-12 text-black-50 m-0"></p>
         <div class="font-rale font-size-14">
-            <a href="#" class="px-3 border-right border-left text-dark">Login</a>
+            <a href="http://localhost/Mobile_Shopee-E-Commerce-Website/login.php" class="px-3 border-right border-left text-dark">Login</a>
             <a href="#" class="px-3 border-right text-dark">
     Wishlist (<?php echo count($product->getData('wishlist')); ?>)
 </a>
