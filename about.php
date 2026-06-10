@@ -4,10 +4,13 @@ include 'header.php';
 ?>
 
 <!-- About Us Section -->
-<div class="container py-5 aboutpage">
-    <h2 class="mb-4">Welcome to our Mobile Shopee Website</h2>
-
-    <p>Welcome to Mobile Shopee, created as part of my college project. This platform represents not just a project, but a journey of learning, creativity, and technical exploration. Here, you’ll find my collections, insights, and various features that I have developed to showcase my skills.</p>
+<div class="aboutpage">
+    <div class="herosection">
+        <div class="image"><img src="assets/faq/aboutusimage.jpg" alt="About Us Image"></div>
+    </div>
+    <div class="bottomsection">
+        <h2>How We Work</h2>
+        <p>Welcome to Mobile Shopee, created as part of my college project. This platform represents not just a project, but a journey of learning, creativity, and technical exploration. Here, you’ll find my collections, insights, and various features that I have developed to showcase my skills.</p>
 
     <div class="aboutproject">
         <h4>About the Project</h4>
@@ -56,6 +59,7 @@ include 'header.php';
         <li>Future-ready for login, payment, and advanced features.</li>
         <li>Clean and professional interface to improve user engagement.</li>
     </ul>
+    </div>
     </div>
 </div>
 

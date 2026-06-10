@@ -662,7 +662,8 @@ body {
 .aboutpage h2 {
     font-size: 35px;
     font-weight: 700;
-     margin-bottom: 10px !important;
+    margin-bottom: 10px !important;
+    color: white;
 
 }
 
@@ -672,6 +673,7 @@ body {
 .aboutpage .upgrading p,
 .aboutpage .features p {
     font-size: 16px;
+    color: white;
 }
 
 .aboutpage .aboutproject li,
@@ -679,6 +681,7 @@ body {
 .aboutpage .upgrading li,
 .aboutpage .features li {
     margin-bottom: 5px;
+    color: white;
 }
 
 .aboutpage .aboutproject > h4,
@@ -688,7 +691,18 @@ body {
     font-size: 30px;
     margin-top: 40px;
     font-weight: 600;
+    color: white;
 }
+
+.aboutpage .features ul {
+    margin-bottom:0px;
+}
+
+.aboutpage .features {
+    padding-bottom: 50px;
+}
+
+
 
 /* login page css */
 
@@ -1017,5 +1031,33 @@ body {
 }
 /* contact us css end */
 
+/* about us page css */
 
+.aboutpage .herosection {
+    height: 450px !important;
+    background: #f2f2f2;
+    margin-bottom: 50px !important;
+    width: 92%;
+    margin: auto;
+    margin-top: 50px !important;
+}
+
+.aboutpage .herosection img {
+    height: 500px;
+    object-fit: cover;
+    width: 100%;
+    margin: auto;
+}
+
+.aboutpage .bottomsection {
+    padding-top: 305px !important;
+    background: #313ee7;
+    margin-top: -250px;
+    padding: 0px 4%;
+}
+
+
+
+
+/* about us page css end */
 

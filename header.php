@@ -47,11 +47,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav m-auto font-rubik">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">On Sale</a>
-                </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="products.php">Product Page <i class="fas fa-chevron-down"></i></a>
+                    <a class="nav-link" href="products.php">Product Page</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="blog.php">Blog</a>
